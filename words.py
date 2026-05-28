@@ -105,12 +105,11 @@ def start_game(words, category=None):
     total_wrong = wrong_desc + wrong_translate
     print(f'Всего верных ответов: {total_correct}.'
           f'Всего неверных ответов: {total_wrong}.')
-    test_day = datetime.now()
-    formated_test_time = test_day.strftime('%Y/%m/%d %H:%M')
+    test_day = datetime.now().strftime('%Y/%m/%d %H:%M')
     result = (
         f'Вего верно: {total_correct}\n'
         f'Всего не верно: {total_wrong}\n'
-        f'<-={formated_test_time}=->'
+        f'<-={test_day}=->'
         '\n'
         '===============================\n'
     )
